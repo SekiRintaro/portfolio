@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -25,7 +24,7 @@ const ContactForm = () => {
                     viewport={{ once: true }}
                     variants={fadeInVariants}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-widest mb-6 border-l-4 border-[#a08f72] pl-4 inline-block text-left md:text-center md:pl-0 md:border-l-0">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-widest mb-2">
                         Contact
                     </h2>
 

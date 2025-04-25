@@ -78,6 +78,15 @@ const Skills: React.FC = () => {
                         Skills
                     </h2>
 
+                    <motion.p
+                        className="text-xs text-gray-500 mt-6 text-center"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1, duration: 0.6 }}
+                    >
+                        ※ クリックすると詳細が表示されます
+                    </motion.p>
+
                     <div className="w-full overflow-hidden">
                         <div className="flex justify-center gap-6 px-2 transition-transform duration-500 ease-in-out">
                             <AnimatePresence initial={false} mode="popLayout">
@@ -108,7 +117,6 @@ const Skills: React.FC = () => {
                         </button>
                     </div>
                 </motion.div>
-
                 <SkillModal skill={selectedSkill} onClose={() => setSelectedSkill(null)} />
             </section>
         </Element>
