@@ -5,7 +5,6 @@ import icon from '../images/banana_megane.png';
 const Header: React.FC = () => {
     return (
         <header className="bg-transparent text-white py-4 px-4 flex justify-between items-center fixed top-0 w-full z-10">
-            {/* 左側：画像とサイト名 */}
             <div className="flex items-center space-x-4">
                 <Link
                     to="top"
@@ -18,10 +17,10 @@ const Header: React.FC = () => {
                         alt="Rintaro Seki"
                         className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mr-2"
                     />
-                    {/* <h1 className="font-bold font-serif text-green-900">
-                        <span className="block text-sm md:text-base text-gray-500">Seki Rintaro's</span>
+                    <h1 className="hidden md:block font-bold font-serif text-green-900">
+                        <span className="block text-sm md:text-base text-gray-500">せき りんたろう's</span>
                         <span className="block text-lg md:text-2xl">Portfolio Site</span>
-                    </h1> */}
+                    </h1>
                 </Link>
             </div>
 
@@ -40,12 +39,22 @@ const Header: React.FC = () => {
                     </li>
                     <li>
                         <Link
-                            to="projects"
+                            to="portfolio"
                             smooth={true}
                             duration={500}
                             className="hover:underline text-green-900"
                         >
-                            Projects
+                            Portfolio
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="skills"
+                            smooth={true}
+                            duration={500}
+                            className="hover:underline text-green-900"
+                        >
+                            Skills
                         </Link>
                     </li>
                     <li>

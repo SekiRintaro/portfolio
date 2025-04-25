@@ -8,6 +8,9 @@ export default {
         primary: '#1f2937',
         secondary: '#374151',
       },
+      fontFamily: {
+        noto: ['"Noto Serif JP"', 'serif'],
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0 },

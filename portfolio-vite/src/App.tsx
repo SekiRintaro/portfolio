@@ -5,6 +5,8 @@ import Home from '../../portfolio-vite/src/pages/Home';
 import Loader from '../../portfolio-vite/src/components/Loader';
 import Contact from '../../portfolio-vite/src/pages/Contact';
 import About from '../../portfolio-vite/src/pages/About';
+import Skills from './pages/Skills';
+import Portfolio from './pages/Portfolio';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -27,6 +29,12 @@ const App: React.FC = () => {
             </section>
             <section id="about" className="bg-[#f5f1e4]">
               <About />
+            </section>
+            <section id="portfolio" className="bg-[#f5f1e4]">
+              <Portfolio />
+            </section>
+            <section id="skill" className="bg-[#f5f1e4]">
+              <Skills />
             </section>
             <section id="contact" className="bg-[#f5f1e4]">
               <Contact />
