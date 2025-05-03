@@ -3,6 +3,7 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
 import portfolioImage from '../images/portfolio.png';
+import tsuzuruImage from '../images/tsuzuruImage.png';
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -21,6 +22,14 @@ const portfolioItems = [
         techs: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         link: 'https://sekirintaro.github.io/portfolio/',
         description: '和のテイストを基調としたシンプルかつ洗練されたデザインのポートフォリオサイト。自身のスキルや制作物を紹介するために構築。レスポンシブ対応およびアニメーションにも注力している。'
+    },
+    {
+        id: 'tsuzuru1',
+        title: 'つづる ~君と綴る毎日~',
+        image: tsuzuruImage,
+        techs: ['React', 'TypeScript', 'Tailwind CSS', 'ChatAPI', 'FireBase'],
+        link: 'https://tsuzuru-diary-app.web.app/',
+        description: '個人開発で初のWEBアプリケーション。住宅街を舞台に、キャラクターがランダムに「あなたの家」を訪問。チャット形式で1日を振り返ることで、親しみのある対話体験とAIによる自然な日記生成を融合。OpenAIとFirebaseを連携させた対話型AI日記アプリ。認証からデータ保存、API中継までをFirebaseで統合し、セキュアかつ高速なSPAをReactとTypeScriptで構築。画像最適化や表示パフォーマンスにも配慮。'
     },
 ];
 
